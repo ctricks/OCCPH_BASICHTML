@@ -1,69 +1,326 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Semantic Elements</title>
-  </head>
-  <body>
-    <header>
-      <nav>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About Me</a></li>
-          <li><a href="#">Contact Us</a></li>
-          <li><a href="#">Services</a></li>
+<head>
+    <!-- I followed tutorial in creating portfolio sites in this page
+    https://www.freecodecamp.org/news/how-to-build-a-developer-portfolio-website/
+    Great for newbie developer like me! :)
+    -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!--CSS Styles -->
+     <link rel="stylesheet" href="css/styles.css" />
+
+     <!-- Favicons -->
+     <link
+       rel="apple-touch-icon"
+       sizes="180x180"
+       href="assets/icons/apple-touch-icon.png"
+     />
+     <link
+       rel="icon"
+       type="image/png"
+       sizes="32x32"
+       href="assets/icons/favicon-32x32.png"
+     />
+ 
+     <!-- Animate CSS CDN -->
+     <link
+       rel="stylesheet"
+       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+     />
+    <title>Christopher Biagtan | Web Developer</title>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav>
+        <h1>Christopher Biagtan</h1>
+        <ul class="navigation">
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#skills" class="nav-link">Skills</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
         </ul>
-      </nav>
-    </header>
-    <main>
-      <section id="about-us">
-        <h1>About Me</h1>
-        <img src="MyPIC.png" height="400px" width="400ox" />
-        <p>
-          <Table>
-            <tr>
-                <td>Name:</td>
-                <td>Christopher Biagtan</td>
-            </tr>
-            <tr>
-                <td>Age:</td>
-                <td>37</td>
-            </tr>
-            <tr>
-                <td>Birthday:</td>
-                <td>January 25,1987</td>
-            </tr>
-            <tr>
-                <td>Hometown:</td>
-                <td>Muntinlupa</td>
-            </tr>
-            <tr></tr>
-          </Table>
-        </p>
+        <button class="burger-menu" id="burger-menu">
+            <ion-icon class="bars" name="menu-outline"></ion-icon>
+        </button> 
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="about">
+        <img
+          src="images/bok.jpg"
+          alt="Christopher Biagtan"
+          loading="lazy"
+          class="hero-img"
+        />
+        <div class="bio animate__animated animate__shakeX">
+          <h2 class="bio-title">About Me</h2>          
+          <p class="bio-text">
+            A kind of person who dream to be a successful developer. I been started as Hardware and Network Technician way back 2008, and there's a oppurtunity opens on 2010 in Software Development.
+            Which I started to focus in software developer.
+          </p>
+        </div>
+    </section>
+    <!-- More about -->
+    <section class="more-about">
+        <h2>More About Me...</h2>
+        <p">
+            The company was located on Balintawak, Quezon City which very far on my place. With this, I not consider this as difficulty but instead challenges because in exchange of this I will learn more.
+            I became Software Developer in Vb6 and start exploring on it. Also assigned in POS Developer in retail which I learned alot of things especially in accounting. Almost 3 years that been there
+            and gain more experience in Microsoft SQL Server. Here I learned SQL Queries and Statements, also in additional for my advance learning, I tried to use also Scripting such as Stored Procedure
+            Triggers and Scheduler. 2010 also I developed my skills in software development using C# and introduce using .net Framework. After this,I decided to apply in Alabang, which this is the nearest
+            area on my home, and to consider the commute and travel it saves time on it. Here I assigned as Windows Mobile Developer, which I integrates program using C# in Windows CE. My project here is 
+            parking ticketing system. Aside from this, I look again another opportunity that is 2014, where I applied in BASS which handle Maritime Operations and I assigned on SQL Reporting Developer, Here
+            my skills in Database improves more, and also been engage on some technology integeration like Microsoft Mail Merge, which the report was integrate on it a automatically generates report based on
+            client requirements.
+          </p>
+          <p>2016, I jumped on Paranaque, which I stay here almost 6 years of my working experience, with this one I enhance my skills in C#.net and also gain another technology stacks like MySQL, Python, RPA, DB2, and ASP.net.
+          as it continous, I met many people there which helps me to improve my skills especially in communication. Also I lead there as their senior consultant which I guides those junior developer in Software Development.
+          We also follow SDLC so that there will be standard in coding. And the most I like on this company was the client is very helpful and has "Malasakit". which I owes alot...    
+          </p>
+          <p>
+          2022, after pandemic... I decided to left on this company and find another company which can help me to improve my skills on Web Development. That why I applied on Verete Global Solution. They help me 
+          on my Web Development Career. They give us 2 month extensive training in Web Developmen using React.JS (MERN). On this I learned alot in web development, but there is no available client for Web Development.
+          Regarding on this, I did not consider this again as my difficulty but instead as a challenge again. Which they introduce us in Banking Company which deals in data management. They are using IBM Oracle and 
+          DataStage in Extract, Transform, Load (ETL) their data in database. I been here for 1 year and 6 months.
+          </p>
+          <p>
+          And today, I'm here again, learn again in web development and concentrate in Front-end Developer and soon will be hired as a Web Developer.
+          </p>
+    </section>
+
+    <!-- Skills section -->
+    <section class="skills" id="skills">
+        <h2 class="skill-header">My Top Skills</h2>
+  
+        <div class="skills-wrapper">
+          <div class="first-set animate__animated animate__pulse">
+            <a href = "https://visualstudio.microsoft.com/" target="_blank">
+            <img
+              src="images/VisualStudio.png"
+              alt="Visual Studio"
+              loading="lazy"
+              class="icon icon-card"              
+            /></a>
+            <a href="https://www.microsoft.com/en-us/sql-server/sql-server-downloads">
+            <img
+              src="images/SQL.png"
+              alt=""
+              loading="lazy"
+              class="icon icon-card"
+            /></a>
+            <a href="https://git-scm.com/">
+            <img
+              src="images/GIT.png"
+              alt=""
+              loading="lazy"
+              class="icon icon-card"
+            /></a>
+          </div>
+  
+          <div class="second-set animate__animated animate__pulse">
+            <a href="https://getbootstrap.com/" target="_blank">
+            <img
+              src="images/BootStrap.png"
+              alt=""
+              loading="lazy"
+              class="icon icon-card"
+            /></a>
+            <a href="https://html.com/" target="_blank">
+            <img
+              src="images/HTML.png"
+              alt=""
+              loading="lazy"
+              class="icon icon-card"
+            /></a>
+            <a href="https://www.javascript.com/" target="_blank">
+            <img
+              src="images/JS.png"
+              alt=""
+              loading="lazy"
+              class="icon icon-card"
+            /></a>
+          </div>
+        </div>
       </section>
-      <secion id="Contact Us">
-        <p>Contact Number : 09458296295</p>
-      </secion>
-      <section id="services">
-        <h2>Services</h2>
-        <ul>
-          <li>Computer Technician</li>
-          <li>Desktop Application Developer</li>
-          <li>Web Application Developer</li>
-        </ul>
+
+    <!-- Projects section -->
+    <section class="projects" id="projects">
+        <h2 class="projects-title">Some of my Recent Projects</h2>
+        <div class="projects-container">
+          <div class="project-container project-card">
+            <img
+              src="images/JSGame.PNG"
+              alt="Java Game Development"
+              loading="lazy"
+              class="project-pic"
+            />
+            <h3 class="project-title">Slide Puzzle (JS Game Dev)</h3>
+            <p class="project-details">
+              This is my Javascript Game Development Output in BootCamp last April 27-28 2024.
+            </p>
+            <a href="https://ctricks.github.io/2048Game/" target="_blank" class="project-link">Check it Out</a>
+          </div>
+        <div class="project-container project-card">
+            <img
+              src="images/BokPortfolio.PNG"
+              alt="My PortFolio"
+              loading="lazy"
+              class="project-pic"
+            />
+            <h3 class="project-title">My Portfolio</h3>
+            <p class="project-details">
+              This is my CAPSTONE project on FULLSTACK DEVELOPMENT Training at Zuitt
+            </p>
+            <a href="https://akosibok.github.io/CAPSTONE/" target="_blank" class="project-link">Check it Out</a>
+          </div>
+          <div class="project-container project-card">
+            <img
+              src="images/OneCodeBootCamp.PNG"
+              alt="greeny-earth"
+              loading="lazy"
+              class="project-pic"
+            />
+            <h3 class="project-title">My Portfolio @ OCCPH</h3>
+            <p class="project-details">
+              My Portfolio on BootCamp in Front-end Development at OneCodeCampPH
+            </p>
+            <a href="#" target="_blank" class="project-link">Check it Out</a>
+          </div>
+        </div>
       </section>
-    </main>
-    <aside>
-      <h3>Latest Ne©ws</h3>
-      <p>Here is my new learning</p>
-      <ul>
-        <li>Git Bash</li>
-        <li>Frontend - HTML</li>        
-      </ul>
-    </aside>
+    <!-- My Certificates -->
+    <section class="Certificates" id="Certificates">
+        <h2 class="projects-title">My Certificates</h2>
+        <div class="projects-container">
+          <div class="project-container project-card">
+            <img
+              src="images/certificate1.PNG"
+              alt="Azure Container APP"
+              loading="lazy"
+              class="project-pic"
+            />
+            <h3 class="project-title">Azure Container APP</h3>
+            <p class="project-details">
+              This is my certificate in joining Azure Container App
+            </p>
+            <a href="https://drive.google.com/file/d/14GtH_SIX6DvUXxSyI0VD2GgEln6EMBQg/view?usp=sharing" target="_blank" class="project-link">Check it Out</a>
+          </div>
+          <div class="project-container project-card">
+            <img
+              src="images/certificate2.PNG"
+              alt="Java Game Development"
+              loading="lazy"
+              class="project-pic"
+            />
+            <h3 class="project-title">Java Game Development</h3>
+            <p class="project-details">
+              This is my certificate in joining Java Game Development
+            </p>
+            <a href="https://drive.google.com/file/d/10fMtvmEQfdQF65YTpXnTqcYi7HZHl24X/view?usp=sharing" target="_blank" class="project-link">Check it Out</a>
+          </div>
+        </div>
+    </section>
+    <!-- Contact section -->
+    <section class="contact" id="contact">
+        <h2>Get In Touch With Me</h2>
+        <div class="contact-form-container">
+          <div class="contact-form">
+            <form action="#" method="POST">
+              <div class="form-control">
+                <label for="name">Name</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="sender-name"
+                  placeholder="Enter Your Name"
+                  class="input-field"
+                  required
+                />
+              </div>
+              <div class="form-control">
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="sender-email"
+                  placeholder="Enter Your Email"
+                  class="input-field"
+                  required
+                />
+              </div>
+              <div class="form-control">
+                <label for="message">Message</label>
+                <textarea
+                  id="message"
+                  cols="60"
+                  rows="10"
+                  placeholder="Enter Your Message"
+                  name="message"
+                  class="input-field"
+                  required
+                ></textarea>
+              </div>
+              <input
+                type="submit"
+                value="Submit"
+                id="submit-btn"
+                class="submit-btn"
+              />
+            </form>
+          </div>
+        </div>
+      </section>
+    <!-- Social accounts - Fixed to the right -->
+    <div class="socials">
+        <a href="https://twitter.com/eurieljohn" target="_blank"
+          ><img
+            src="images/Twitter.png"
+            alt="Twitter"   
+            loading="lazy"
+            class="socicon"
+        /></a>
+        <a href="https://www.instagram.com/eurieljohn/" target="_blank"
+          ><img
+            src="images/instagram.jpg"
+            alt="Instagram"
+            loading="lazy"
+            class="socicon"
+        /></a>
+        <a href="https://www.linkedin.com/in/christopher-biagtan-495b8b73/" target="_blank"
+          ><img
+            src="images/linkedin.jpg"
+            alt="Linkedin"
+            loading="lazy"
+            class="socicon"
+        /></a>
+        <a href="https://github.com/ctricks" target="_blank"
+          ><img 
+          src="images/github.png" 
+          alt="Github" 
+          loading="lazy"
+          class="socicon"
+        />
+        </a>
+    </div>
+    <!-- Scroll to top -->
+
+    <!-- Footer section -->
     <footer>
-      <p>&copy;2024 OCC. All rights reserved.</p>
+        Copyright@2024. Christopher Biagtan
     </footer>
-  </body>
+    <!-- Website scripts -->
+    <script src="assets/js/app.js"></script>
+
+    <!-- Ion icons scripts -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+</body>
 </html>
